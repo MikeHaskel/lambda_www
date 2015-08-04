@@ -10,7 +10,7 @@ Lambda.IR = (function() {
 	    stackPtr: new Array
 	}
 	this.unsaved = {
-	    running: true;
+	    running: true
 	}
     }
     ExecutionState.prototype.step = function() {
@@ -29,10 +29,10 @@ Lambda.IR = (function() {
     }
     ExecutionState.prototype.enter = function(codePtr, thisPtr) {
 	this.saved = {
-	    codePtr: codePtr;
-	    thisPtr: thisPtr;
-	    framePtr: this.saved;
-	    stackPtr: new Array;
+	    codePtr: codePtr,
+	    thisPtr: thisPtr,
+	    framePtr: this.saved,
+	    stackPtr: new Array
 	}
     }
     ExecutionState.prototype.leave = function() {
